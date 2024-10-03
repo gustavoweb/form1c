@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Maquinas Agricolas</h1>
+
+      <form action="/submit" method="POST">
+        <!-- Elementos do formulário -->
+        <label for="name">Nome:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Digite seu nome"
+        />
+        <br />
+        <label for="age">Idade:</label>
+        <input type="number" id="age" name="age" min="1" max="100" />
+        <br />
+        <label for="pf">
+          <input type="radio" id="pf" name="pessoa" value="pf" />
+          Pessoa Fisica
+        </label>
+        <label for="pj">
+          <input type="radio" id="pj" name="pessoa" value="pj" />
+          Pessoa Juridica
+        </label>
+        <br />
+        <label for="country">Pessoa</label>
+        <select id="pessoa" name="pessoa">
+          <option value="fisica">Fisica</option>
+          <option value="juridica">Juridica</option>
+        </select>
+        <br>
+        <label for="terms">
+            <input type="checkbox" id="terms" name="terms">
+            Trator
+          </label>
+          <label for="terms"></label>
+            <input type="checkbox" id="terms" name="terms">
+            Caminhão
+          </label>
+          <label for="terms"></label>
+            <input type="checkbox" id="terms" name="terms">
+            Carro
+          </label>
+      </form>
+    </main>
+  </body>
+</html>
